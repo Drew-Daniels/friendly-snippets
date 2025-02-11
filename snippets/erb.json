@@ -57,8 +57,23 @@
         "description": "render block pe"
     },
     "exec": {
-        "prefix": ["er", "%"],
+        "prefix": ["ere", "%"],
         "body": ["<% $1 %>"],
         "description": "erb exec block"
+    },
+    "print": {
+        "prefix": ["erp", "="],
+        "body": ["<%= $1 %>"],
+        "description": "erb print block"
+    },
+    "raw": {
+        "prefix": ["err", "=="],
+        "body": ["<%== $1 %>"],
+        "description": "erb raw block"
+    },
+    "comment": {
+        "prefix": ["erc", "#"],
+        "body": ["<%# $1 %>"],
+        "description": "erb comment block"
     }
 }
