@@ -1,7 +1,7 @@
 {
     "echo": {
         "prefix": "echo",
-        "body": "echo \"${0:message}\"",
+        "body": "echo \"${0}\"",
         "description": "Echo a message."
     },
     "read": {
